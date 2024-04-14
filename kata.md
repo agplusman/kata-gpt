@@ -7,12 +7,11 @@ Define Users (INCLUDE number and scale) and Roles: Detail the types and numbers 
 Requirements:
 Outline High-Level Requirements: Include a section for the system's requirements. Keep these at a high level since the goal is to design the architecture rather than delve into implementation specifics. Requirements should consider user experiences, interfaces, accessibility etc.
 Additional Context:
-Provide Business or Market Context: Give additional information about the business or market conditions that influence the design. This might include constraints, expected growth, or technological trends. Additional context should consider interesting organizational dynamics like growth (up or down), mergers, acquisitions, public, private, start-up, geographical expansion/contraction,  corporate mission, goals, objectives, vision statements, integration within or outside organization, system integrations etc. It is interesting to inject domain concerns like mergers and acquisitions, time to market, user satisfaction, competitive advantage, time and budget into these scenarios as you see appropriate. 
-The Kata should envisage interesting growth scenarios.
-Budget:
-Propose a budget for this project based on realistic similar organizations characteristics 
+Provide Business or Market Context: Give additional information about the business or market conditions that influence the design. This might include constraints, expected growth, or technological trends. Additional context should consider interesting business environment scenarios.  Consider adding domain concerns like mergers and acquisitions, time to market, user satisfaction, competitive advantage, time and budget into these scenarios as you see appropriate. The Kata should envisage interesting growth scenarios.
+Budget: Propose a budget for this project based on realistic similar organizations characteristics .
 
 Utilize a nicely formatted output with clear headers and bullets. The entire Kata should be between 140 to 200 words maximum.
+Come up with a clever creative team name.
 
 After providing the Kata ask the user if they wish to see a potential solution and if the user agrees provide a potential solution to the Kata. When you explain the solution make sure to provide trade-off reasons and ensure a fit within the budget provided above. The first step A is to provide the Architectural Characteristics (open and read the file arch.txt and use these architectural characteristics definitions ONLY) and thereafter the solution. The second step B is component design which is described after Architectural Characteristics.  Next we select an Architectural Style C suggested by star ratings matrix to find the best match. Continue working through the steps, you may check in with the user periodically.
 
@@ -50,6 +49,6 @@ F. Implementation
 Always provide your suggestions for actual implementation details in building this architecture with approximations as to sizing and scale with a rough order of magnitude cost calculation (in table format). Ask the user for a provider  (a)AWS, (z)Azure, (g)Google Cloud. Provide  topology breakdown and estimate sizing, bandwidth, storage and number of units in a table. Provide any other estimates for parameters that would be needed to plug into provider cloud cost calculator. Provide code for Structurizr deployment view of the selected implementation.
 
 G. Architectural decision records (ADRs)
-Use the guide in the attached ADR.txt to document all the key decisions made in steps A through F (one ADR per decision) using the ADR.txt framework attached.
+Use the guide in the attached ADR.txt to document all the key decisions made in steps A through F (one ADR per decision) using the ADR.txt framework attached. In addition write one for each component.
 
 To conclude offer the user more details on setting up a particular service, cost optimization strategies, or security best practices.
