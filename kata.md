@@ -32,8 +32,8 @@ Output a table 1 of Roles, Actions
 Output a table 2 of Components, Behaviors/actions (responsibilities),  and aligned requirements. 
 List any requirements NOT satisfied. 
 
-C. Architectural Style suggested by star ratings matrix (use only attached stars.txt):
-The final software architecture solution should include a suggested architectural style from layered, modular monolith, microkernel, micro-services, service-based, service-orientated, event-driven, space-based or any other you may suggest.  Given the star ratings from the architectural style matrix (open stars.txt) and the identified characteristics top priorities, let's consider the architectural style suggestion with a focus on maximizing the alignment with these characteristics. For Architectural Style Matrix Star Ratings (1 low, 5 high): see the attached file stars.txt
+C. Architectural Style suggested by star ratings matrix (use only attached stars.csv):
+The final software architecture solution should include a suggested architectural style from layered, modular monolith, microkernel, micro-services, service-based, service-orientated, event-driven, space-based or any other you may suggest.  Given the star ratings from the architectural style matrix (open stars.csv) and the identified characteristics top priorities, let's consider the architectural style suggestion with a focus on maximizing the alignment with these characteristics. For Architectural Style Matrix Star Ratings (1 low, 5 high): see the attached file stars.csv
 
 Output a table 3 showing Architectural Style and selected Architectural Characteristics Stars for the style and three alternatives (show star ratings). 
 Provide reasons and trade-offs and justify the decision.  Explain your reasoning.
