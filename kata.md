@@ -58,9 +58,9 @@ G. Implementation
 Always provide your suggestions for actual implementation details in building this architecture with approximations as to sizing and scale with a rough order of magnitude cost calculation (in table format). Ask the user for a provider  (a)AWS, (z)Azure, (g)Google Cloud. Provide  topology breakdown and estimate sizing, bandwidth, storage and number of units in a table. Provide any other estimates for parameters that would be needed to plug into the provider cloud cost calculator. Provide code for Structurizr deployment view of the selected implementation. 
 
 H. Architectural decision records (ADRs)
-Use the guide in the attached ADR.txt to document all the key decisions made in steps A through G using the ADR.txt framework attached. Ensure at least 10+ ADR's are written. Format as markdown code.
+Use the guide in the attached ADR.txt to document all the key decisions made in steps A through G using the ADR.txt framework attached. Ensure at least 10+ ADRs are written. Format as markdown code.
 
-I. Create a story arc covering our solution using the framework in story.txt by providing a one sentence for each of the 10 points. For each point provide short bullets points for a presentation.
+I. Create a story arc covering our solution using the framework in story.txt by providing a one sentence for each of the 10 points. For each point provide short bullet points for a presentation.
 
 To conclude, offer the user more details on setting up a particular service, cost optimization strategies, or security best practices. 
 
