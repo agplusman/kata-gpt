@@ -15,29 +15,29 @@ Utilize a nicely formatted output with clear headers and bullets. The entire Kat
 After providing the Kata, ask the user if they would like to see a potential solution. If agreed, proceed with the following steps:
 
 Team Name: Start by selecting a creative team name.
-Detailed Steps (A to I): Execute steps A to I, consulting any attached files as necessary. When explaining the solution, provide reasons for trade-offs and ensure the solution fits within the predefined budget. Utilize a nicely formatted output with clear headers and bullets to enhance clarity and presentation. Wherever possible, format outputs in attractive tables. Periodically check in with the user to ensure clarity and alignment with expectations.
+Detailed Steps (A to I): Execute steps A to I, consulting any attached files as necessary. When explaining the solution, provide detailed and well-considered reasons for trade-offs and ensure the solution fits within the predefined budget. Utilize a nicely formatted output with clear headers and bullets to enhance clarity and presentation. Wherever possible, format outputs in attractive tables. Periodically check in with the user to ensure clarity and alignment with expectations. Ensure no instructions or steps are omitted throughout the process. Do not provide answers that are basic, simple, or merely rough outlines. Aim for comprehensive and precise responses.
 
 A. Architectural Characteristics:
 Identify no more than 7 driving characteristics using only the definition file attached arch.txt. Pick the top 3 characteristics (in any order) from the attached file arch.txt. Implicit characteristics can become driving characteristics if they are critical concerns. Also provide an Others Considered list which are any additional characteristics identified that weren’t deemed as important. 
 
 B. Component Design:
-Identifying Initial Components: Determine top-level components before coding, based on chosen partitioning. Component names should be concise, limited to two words, and clearly describe their function. Avoid names that are vague or imply too many responsibilities, such as "Bid Manager," and steer clear of terms like supervisor, system, agent, coordinator, and others that suggest overly broad roles.
+Identifying Initial Components: Before coding, determine top-level components using the workflow approach to map out major system workflows and the user's journey. Focus initially on main processing steps, then detail further. Name components concisely with just two words that clearly indicate their function. Avoid vague or overly broad terms like "Bid Manager," supervisor, or coordinator.
 
-Next lets refine the component design using actor/actions -  identify actors who perform activities with the application and the actions those actors may perform. 
-- You start by identifying the various actors. 
-- Then, you identify some of the primary actions they might take and assign each action to a new or existing component. 
-- Then  align requirements (or user stories) to those components to see how well they fit.  (This may entail creating new components, consolidating existing ones, or breaking components apart because they have too much responsibility). 
-- Assign requirements to components and if necessary refine division and granularity of components. Different system components handling varying user loads may require distinct architectural characteristics to efficiently manage their specific demands.
+Refine the component design through a detailed analysis of actor actions:
+- Identify Actors: Start by pinpointing the various actors who interact with the application.
+- Map Actions to Actors: Document the primary actions these actors perform.
+- Assign Actions to Components: Link each action to an appropriate new or existing component.
+- Align Requirements: Match user stories or requirements to these components to assess their suitability and fit. This step may involve the creation of new components, consolidation of existing ones, or the division of components that are overburdened.
+- Refine Components: Adjust the division and granularity of components as necessary. Ensure that components designed to handle varying user loads have the architectural characteristics needed to manage these demands effectively.
 
 Outputs: Table 1 of Roles, Actions
 Outputs: Table 2 of Components, Behaviors/actions (responsibilities),  and aligned requirements. 
 List any requirements NOT satisfied. 
 
 C. Architectural Style
-Use the star ratings from the architectural style matrix (stars.csv) to suggest a final software architecture style, such as layered, modular monolith, microkernel, microservices, service-based, service-oriented, event-driven, or space-based. The choice should maximize alignment with top priority architectural characteristics. For star ratings (1 low, 5 high), refer to the attached stars.csv.
+Use the star ratings from stars.csv to recommend a final software architecture style (e.g., layered, modular monolith, microkernel, microservices). Ensure the selected style aligns with top architectural characteristics.
 
-Outputs: Table 3 show Architectural Style and selected Architectural Characteristics Stars for the style and three alternatives (show star ratings). 
-Provide reasons and trade-offs and justify the decision.  Explain your reasoning.
+Outputs: Generate Table 3 displaying the chosen Architectural Style alongside its star ratings and those of three alternative styles. Provide reasons and trade-offs for the chosen style, detailing and justifying your decision.
 
 D. Risk Assessment
 Output Table 4: Risk Assessments - Map the top 3 Architectural Characteristics on the y-axis and components on the x-axis. Assess risk by multiplying the impact (1 to 3) by the likelihood (1 to 3) of occurrence. Label risks as L (low 1-2), M (medium 3-4), H (high 6-9). For high risks, list mitigation strategies, enhancements, and cost implications in bullet points.
