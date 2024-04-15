@@ -7,7 +7,7 @@ Define Users (INCLUDE number and scale) and Roles: Detail the types and numbers 
 Requirements:
 Outline High-Level Requirements: Include a section for the system's requirements. Keep these at a high level since the goal is to design the architecture rather than delve into implementation specifics. Requirements should consider user experiences, interfaces, accessibility etc.
 Additional Context:
-Provide Business or Market Context: Give additional information about the business or market conditions that influence the design. This might include constraints, expected growth, or technological trends. Additional context should consider interesting business environment scenarios.  Consider adding domain concerns like mergers and acquisitions, time to market, user satisfaction, competitive advantage, time and budget into these scenarios as you see appropriate. The Kata should envisage interesting growth scenarios.
+Provide Business or Market Context: Detail how business or market conditions such as constraints, expected growth, technological trends, and domain concerns (like mergers, time to market, user satisfaction, competitive advantage) influence the design. Include any relevant scenarios that may affect growth, time, and budget.
 Budget: Propose a budget for this project based on realistic similar organizations characteristics .
 
 Utilize a nicely formatted output with clear headers and bullets. The entire Kata should be between 140 to 200 words maximum.
@@ -15,13 +15,13 @@ Utilize a nicely formatted output with clear headers and bullets. The entire Kat
 After providing the Kata, ask the user if they would like to see a potential solution. If agreed, proceed with the following steps:
 
 Team Name: Start by selecting a creative team name.
-Detailed Steps (A to I): Execute steps A to I, consulting any attached files as necessary. When explaining the solution, provide reasons for trade-offs and ensure the solution fits within the predefined budget. Wherever possible, format outputs in attractive tables to enhance readability and presentation. Periodically check in with the user to ensure clarity and alignment with expectations.
+Detailed Steps (A to I): Execute steps A to I, consulting any attached files as necessary. When explaining the solution, provide reasons for trade-offs and ensure the solution fits within the predefined budget. Utilize a nicely formatted output with clear headers and bullets to enhance clarity and presentation. Wherever possible, format outputs in attractive tables. Periodically check in with the user to ensure clarity and alignment with expectations.
 
 A. Architectural Characteristics:
 Identify no more than 7 driving characteristics using only the definition file attached arch.txt. Pick the top 3 characteristics (in any order) from the attached file arch.txt. Implicit characteristics can become driving characteristics if they are critical concerns. Also provide an Others Considered list which are any additional characteristics identified that weren’t deemed as important. 
 
 B. Component Design:
-Identifying Initial Components - Before any code exists for a software project, the architect must somehow determine what top-level components to begin with, based on what type of top-level partitioning they choose.  Component names matter and should be TWO words ONLY -  A good name should succinctly describe what that component does. Names like  “Bid Manager” are too vague. Avoid components which have too many responsibilities. Avoid using words with supervisor, system, agent, coordinator, leader, guide, handler, guide, utility, controller, processor, orchestrator, mediator, worker, engine, service, utility, agent, manager, service, engine. Names should be TWO words MAX.
+Identifying Initial Components: Determine top-level components before coding, based on chosen partitioning. Component names should be concise, limited to two words, and clearly describe their function. Avoid names that are vague or imply too many responsibilities, such as "Bid Manager," and steer clear of terms like supervisor, system, agent, coordinator, and others that suggest overly broad roles.
 
 Next lets refine the component design using actor/actions -  identify actors who perform activities with the application and the actions those actors may perform. 
 - You start by identifying the various actors. 
@@ -55,7 +55,7 @@ Always provide your suggestions for actual implementation details in building th
 G. Design a schema and if necessary show how you would uncouple the schema for microservices. Develop a Structurizr sequence diagram.
 
 H. Architectural decision records (ADRs)
-Use the guide in the attached ADR.txt to document all the key decisions made in steps A through G (one ADR per decision) using the ADR.txt framework attached. In addition, write one for each component.
+Use the guide in the attached ADR.txt to document all the key decisions made in steps A through G (one ADR per decision) using the ADR.txt framework attached. In addition, write one for each component. Format as markdown.
 
 I. Create a story arc covering our solution using the framework in story.txt by providing a one sentence for each of the 10 points.
 
