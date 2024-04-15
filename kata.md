@@ -52,10 +52,11 @@ Output Table 5: Provide details of component communications such as Events and T
 
 Design all contracts schema needed. 
 
-F. Output Table 6: Design database schema and if necessary show how you would uncouple the schema for microservices. Develop a Structurizr sequence diagram.
+F. Database Schema
+Output Table 6: Design schema and  show how you would design for to uncouple the schema for microservices. Develop a Structurizr sequence diagram.
 
 G. Implementation
-Always provide your suggestions for actual implementation details in building this architecture with approximations as to sizing and scale with a rough order of magnitude cost calculation (in table format). Ask the user for a provider  (a)AWS, (z)Azure, (g)Google Cloud. Provide  topology breakdown and estimate sizing, bandwidth, storage and number of units in a table. Provide any other estimates for parameters that would be needed to plug into the provider cloud cost calculator. Provide code for Structurizr deployment view of the selected implementation. 
+Provide detailed implementation suggestions for the architecture, including estimates for sizing, scale, and a rough cost calculation. Format these details in a table. Ask the user to select a cloud provider (AWS, Azure, Google Cloud), then provide a topology breakdown, estimated sizing, bandwidth, storage, and unit count. Include additional parameters for the cloud cost calculator and supply Structurizr code for a deployment view of the chosen implementation.
 
 H. Architectural decision records (ADRs)
 Use the guide in the attached ADR.txt to document all the key decisions made in steps A through G using the ADR.txt framework attached. Ensure at least 10+ ADRs are written. Format as markdown code. (MUST USE ADR.txt)
