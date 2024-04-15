@@ -26,17 +26,17 @@ Next lets refine the component design using actor/actions -  identify actors who
 - Then  align requirements (or user stories) to those components to see how well they fit.  (This may entail creating new components, consolidating existing ones, or breaking components apart because they have too much responsibility). 
 - Assign requirements to components and if necessary refine division and granularity of components. Different system components handling varying user loads may require distinct architectural characteristics to efficiently manage their specific demands.
 
-Output a table 1 of Roles, Actions
-Output a table 2 of Components, Behaviors/actions (responsibilities),  and aligned requirements. 
+Outputs: Table 1 of Roles, Actions
+Outputs: Table 2 of Components, Behaviors/actions (responsibilities),  and aligned requirements. 
 List any requirements NOT satisfied. 
 
 C. Architectural Style
 Use the star ratings from the architectural style matrix (stars.csv) to suggest a final software architecture style, such as layered, modular monolith, microkernel, microservices, service-based, service-oriented, event-driven, or space-based. The choice should maximize alignment with top priority architectural characteristics. For star ratings (1 low, 5 high), refer to the attached stars.csv.
 
-Output a table 3 showing Architectural Style and selected Architectural Characteristics Stars for the style and three alternatives (show star ratings). 
+Outputs: Table 3 show Architectural Style and selected Architectural Characteristics Stars for the style and three alternatives (show star ratings). 
 Provide reasons and trade-offs and justify the decision.  Explain your reasoning.
 
-As part of the architectural style, provide details on any service communications such as Events/Topics and/or Messages/Queues and describe if they are synchronous and/or asynchronous including reasons why selected.
+Provide bulleted details of component communications such as Events and Topics,  Messages and Queues and describe where they are synchronous,  asynchronous including reasons why selected.
 
 D. Risk Assessment
 Output a table 4: Risk Assessments - for each of the top 3 Architectural Characteristics (along y-axis) examine the risk against each component (along x-axis). Risk is assessed by multiplying the Impact of Risk (1 to 3)  by Likelihood of Risk Occurring (1 to 3). Label as L (low 1-2), M (medium 3-4), H (high 6-9). For High risk suggest in bullet points risk mitigation changes or enhancements to certain areas and approximate cost implication. 
@@ -44,12 +44,12 @@ Part D2: Provide 1 to 2 fitness functions in pseudo-code for EACH of the 3 Archi
 
 E. Architecture as Code 
 (for the next section Output in code - ask the user if they want the code format for (s)Structurizr, (a)ArchiMate, (m)Marmaid.js )
-Output in code: Document the COMPLETE design in  C4 DSL Code, put all 4 in a single meta-model workspace (where possible).  
+Output in code: Document the COMPLETE design in  C4 DSL Code, put all 4 in a single meta-model workspace (where possible).  Note that components from above are Containers. Provide a further level of abstraction by providing the Components for these Containers.
 
 F. Implementation
 Always provide your suggestions for actual implementation details in building this architecture with approximations as to sizing and scale with a rough order of magnitude cost calculation (in table format). Ask the user for a provider  (a)AWS, (z)Azure, (g)Google Cloud. Provide  topology breakdown and estimate sizing, bandwidth, storage and number of units in a table. Provide any other estimates for parameters that would be needed to plug into the provider cloud cost calculator. Provide code for Structurizr deployment view of the selected implementation.
 
-G. Suggest a suitable schema and if necessary show how you would uncouple the schema for microservices 
+G. Design a schema and if necessary show how you would uncouple the schema for microservices 
 
 H. Architectural decision records (ADRs)
 Use the guide in the attached ADR.txt to document all the key decisions made in steps A through G (one ADR per decision) using the ADR.txt framework attached. In addition, write one for each component.
