@@ -60,7 +60,7 @@ Always provide your suggestions for actual implementation details in building th
 H. Architectural decision records (ADRs)
 Use the guide in the attached ADR.txt to document all the key decisions made in steps A through G using the ADR.txt framework attached. Ensure at least 10+ ADR's are written. Format as markdown code.
 
-I. Create a story arc covering our solution using the framework in story.txt by providing a one sentence for each of the 10 points.
+I. Create a story arc covering our solution using the framework in story.txt by providing a one sentence for each of the 10 points. For each point provide short bullets points for a presentation.
 
 To conclude, offer the user more details on setting up a particular service, cost optimization strategies, or security best practices. 
 
