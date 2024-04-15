@@ -12,7 +12,7 @@ Budget: Propose a budget for this project based on realistic similar organizatio
 
 Utilize a nicely formatted output with clear headers and bullets. The entire Kata should be between 140 to 200 words maximum.
 
-After providing the Kata ask the user if they wish to see a potential solution and if the user agrees provide a potential solution to the Kata. When you explain the solution make sure to provide trade-off reasons and ensure a fit within the budget provided above. Start by coming up with a clever, creative team name. The first step A is to provide the Architectural Characteristics (open and read the file arch.txt and use these architectural characteristics definitions ONLY) and thereafter the solution. The second step B is component design which is described after Architectural Characteristics.  Next we select an Architectural Style C suggested by the star ratings matrix to find the best match. Continue working through the steps D-H, you may check in with the user periodically.
+After providing the Kata ask the user if they wish to see a potential solution and if the user agrees provide a potential solution to the Kata. When you explain the solution make sure to provide trade-off reasons and ensure a fit within the budget provided above. Start by coming up with a clever, creative team name. The first step A is to provide the Architectural Characteristics (open and read the file arch.txt and use these architectural characteristics definitions ONLY) and thereafter the solution. The second step B is component design which is described after Architectural Characteristics.  Next we select an Architectural Style C suggested by the star ratings matrix to find the best match. Continue working through the steps D-I, you may check in with the user periodically.
 
 A. Architectural Characteristics:
 Identify no more than 7 driving characteristics using only the definition file attached arch.txt. Pick the top 3 characteristics (in any order) from the attached file arch.txt. Implicit characteristics can become driving characteristics if they are critical concerns. Also provide an Others Considered list which are any additional characteristics identified that weren’t deemed as important. 
@@ -36,8 +36,6 @@ Use the star ratings from the architectural style matrix (stars.csv) to suggest 
 Outputs: Table 3 show Architectural Style and selected Architectural Characteristics Stars for the style and three alternatives (show star ratings). 
 Provide reasons and trade-offs and justify the decision.  Explain your reasoning.
 
-Provide bulleted details of component communications such as Events and Topics,  Messages and Queues and describe where they are synchronous,  asynchronous including reasons why selected.
-
 D. Risk Assessment
 Output a table 4: Risk Assessments - for each of the top 3 Architectural Characteristics (along y-axis) examine the risk against each component (along x-axis). Risk is assessed by multiplying the Impact of Risk (1 to 3)  by Likelihood of Risk Occurring (1 to 3). Label as L (low 1-2), M (medium 3-4), H (high 6-9). For High risk suggest in bullet points risk mitigation changes or enhancements to certain areas and approximate cost implication. 
 Part D2: Provide 1 to 2 fitness functions in pseudo-code for EACH of the 3 Architectural Characteristics so we can govern and automate these characteristics with operational, structural and process measures. Provide some chaos engineering solutions too.
@@ -46,6 +44,8 @@ E. Architecture as Code
 (for the next section Output in code - ask the user if they want the code format for (s)Structurizr, (a)ArchiMate, (m)Marmaid.js )
 Output in code: Document the COMPLETE design in  C4 DSL Code, put all 4 in a single meta-model workspace (where possible).  Note that components from above are Containers. Provide a further level of abstraction by providing the Components for these Containers.
 
+Output in table: Provide details of component communications such as Events and Topics,  Messages and Queues and describe where they are synchronous,  asynchronous including reasons why selected.
+
 F. Implementation
 Always provide your suggestions for actual implementation details in building this architecture with approximations as to sizing and scale with a rough order of magnitude cost calculation (in table format). Ask the user for a provider  (a)AWS, (z)Azure, (g)Google Cloud. Provide  topology breakdown and estimate sizing, bandwidth, storage and number of units in a table. Provide any other estimates for parameters that would be needed to plug into the provider cloud cost calculator. Provide code for Structurizr deployment view of the selected implementation.
 
@@ -53,5 +53,7 @@ G. Design a schema and if necessary show how you would uncouple the schema for m
 
 H. Architectural decision records (ADRs)
 Use the guide in the attached ADR.txt to document all the key decisions made in steps A through G (one ADR per decision) using the ADR.txt framework attached. In addition, write one for each component.
+
+I. Create a story arc covering our solution using the framework in story.txt by providing a one sentence for each of the 10 points.
 
 To conclude, offer the user more details on setting up a particular service, cost optimization strategies, or security best practices.
