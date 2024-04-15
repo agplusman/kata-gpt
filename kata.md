@@ -30,14 +30,14 @@ Refine the component design through a detailed analysis of actor actions:
 - Align Requirements: Match user stories or requirements to these components to assess their suitability and fit. This step may involve the creation of new components, consolidation of existing ones, or the division of components that are overburdened.
 - Refine Components: Adjust the division and granularity of components as necessary. Ensure that components designed to handle varying user loads have the architectural characteristics needed to manage these demands effectively.
 
-Outputs: Table format of Roles, Actions
-Outputs: Table format of Components, Behaviors/actions (responsibilities),  and aligned requirements. 
+Output Table 1 - Roles, Actions
+Output Table 2 - Components, Behaviors/actions (responsibilities),  and aligned requirements. 
 List any requirements NOT satisfied. 
 
 C. Architectural Style
 Use the star ratings from stars.csv to recommend a final software architecture style (e.g., layered, modular monolith, microkernel, microservices). Ensure the selected style aligns with top architectural characteristics. (MUST USE stars.csv)
 
-Outputs: Generate IN Table  format displaying the chosen Architectural Style alongside its star ratings (for each architectural characteristic) and those of three alternative styles. Provide reasons and trade-offs for the chosen style, detailing and justifying your decision.
+Output Table 3 -  displaying the chosen Architectural Style alongside its star ratings (for each architectural characteristic) and those of three alternative styles. Provide reasons and trade-offs for the chosen style, detailing and justifying your decision.
 
 D. Risk Assessment
 Output Table 4: Risk Assessments - Map the top 3 Architectural Characteristics on the y-axis and components on the x-axis. Assess risk by multiplying the impact (1 to 3) by the likelihood (1 to 3) of occurrence. Label risks as L (low 1-2), M (medium 3-4), H (high 6-9). For high risks, list mitigation strategies, enhancements, and cost implications in bullet points.
@@ -48,11 +48,11 @@ E. Architecture as Code
 (for the next section Output in code - ask the user if they want the code format for (s)Structurizr, (a)ArchiMate, (m)Marmaid.js )
 Output in code: Document the COMPLETE design in  C4 DSL Code, include Containers and Components details.  Note that components from above are equivalent to Containers. Develop a further level of granularity by providing the Components for these Containers.
 
-Output in table format: Provide details of component communications such as Events and Topics,  Messages and Queues and describe where they are synchronous,  asynchronous including reasons why selected. 
+Output Table 5: Provide details of component communications such as Events and Topics,  Messages and Queues and describe where they are synchronous,  asynchronous including reasons why selected. 
 
 Design all contracts schema needed. 
 
-F. Design database schema and if necessary show how you would uncouple the schema for microservices. Develop a Structurizr sequence diagram.
+F. Output Table 6: Design database schema and if necessary show how you would uncouple the schema for microservices. Develop a Structurizr sequence diagram.
 
 G. Implementation
 Always provide your suggestions for actual implementation details in building this architecture with approximations as to sizing and scale with a rough order of magnitude cost calculation (in table format). Ask the user for a provider  (a)AWS, (z)Azure, (g)Google Cloud. Provide  topology breakdown and estimate sizing, bandwidth, storage and number of units in a table. Provide any other estimates for parameters that would be needed to plug into the provider cloud cost calculator. Provide code for Structurizr deployment view of the selected implementation. 
