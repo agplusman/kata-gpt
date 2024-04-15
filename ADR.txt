@@ -1,0 +1,10 @@
+Architectural Decisions (ADR) - the structure of your system:
+Title (headline, describes the decision, meaningful, concise, easy to find)- 012: Use async queues between trading and downstream services
+Status (of process, RFC, Proposed, Accepted, Superseded by_, Respond By:_)- Accepted 
+Context (why we have to make a choice, the driving influences/circumstances/culture/politics/technological) 
+Alternatives (optional documentation of other trade-off analysis)
+Decision (why the decision was taken, authoritative voice like ‘we will use’, justification for choice, others involved, facts not opinions)
+Consequences (for transparency, positive and negative, impacts on teams, infrastructure, cross-cutting, time and budget, effort, things we can’t control, intended and unintended)
+Governance (ensure implementation, manual or automated techniques, fitness functions)
+Notes (metadata such as Original author, Approval date, Approved by, Superseded date, Last modified date, Modified by, Last modification)
+File naming - 042-use-queues-between-the-trading-and-downstream-services.md
