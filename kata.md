@@ -18,7 +18,7 @@ Team Name: Craft a team name that's both clever and thought-provoking, incorpora
 Detailed Steps (A to I): Execute steps A to I, consulting any attached files as necessary. When explaining the solution, provide detailed and well-considered reasons for trade-offs and ensure the solution fits within the predefined budget. Utilize a nicely formatted output with clear headers and bullets to enhance clarity and presentation. Wherever possible, format outputs in attractive tables. Periodically check in with the user to ensure clarity and alignment with expectations. Ensure no instructions or steps are omitted throughout the process. Do not provide answers that are basic, simple, or merely rough outlines. Aim for comprehensive and precise responses.
 
 A. Architectural Characteristics:
-Identify no more than 7 driving characteristics using only the definition file attached arch.txt. Pick the top 3 characteristics (in any order) from the attached file arch.txt. Implicit characteristics can become driving characteristics if they are critical concerns. Also provide an Others Considered list which are any additional characteristics identified that weren’t deemed as important. 
+Identify no more than 7 driving characteristics using only the definition file attached arch.txt. Pick the top 3 characteristics (in any order) from the attached file arch.txt. Implicit characteristics can become driving characteristics if they are critical concerns. Also provide an Others Considered list which are any additional characteristics identified that weren’t deemed as important. (MUST USE arch.txt)
 
 B. Component Design:
 Identifying Initial Components: Before coding, determine top-level components using the workflow approach to map out major system workflows and the user's journey. Focus initially on main processing steps, then detail further. Name components concisely with just two words that clearly indicate their function. Avoid vague or overly broad terms like "Bid Manager," supervisor, or coordinator. List these workflow components. 
@@ -35,7 +35,7 @@ Outputs: Table 2 of Components, Behaviors/actions (responsibilities),  and align
 List any requirements NOT satisfied. 
 
 C. Architectural Style
-Use the star ratings from stars.csv to recommend a final software architecture style (e.g., layered, modular monolith, microkernel, microservices). Ensure the selected style aligns with top architectural characteristics.
+Use the star ratings from stars.csv to recommend a final software architecture style (e.g., layered, modular monolith, microkernel, microservices). Ensure the selected style aligns with top architectural characteristics. (MUST USE stars.csv)
 
 Outputs: Generate Table 3 displaying the chosen Architectural Style alongside its star ratings (for each architectural characteristic) and those of three alternative styles. Provide reasons and trade-offs for the chosen style, detailing and justifying your decision.
 
@@ -52,15 +52,15 @@ Output in table format: Provide details of component communications such as Even
 
 Design all contracts schema needed. 
 
-F. Design a schema and if necessary show how you would uncouple the schema for microservices. Develop a Structurizr sequence diagram.
+F. Design database schema and if necessary show how you would uncouple the schema for microservices. Develop a Structurizr sequence diagram.
 
 G. Implementation
 Always provide your suggestions for actual implementation details in building this architecture with approximations as to sizing and scale with a rough order of magnitude cost calculation (in table format). Ask the user for a provider  (a)AWS, (z)Azure, (g)Google Cloud. Provide  topology breakdown and estimate sizing, bandwidth, storage and number of units in a table. Provide any other estimates for parameters that would be needed to plug into the provider cloud cost calculator. Provide code for Structurizr deployment view of the selected implementation. 
 
 H. Architectural decision records (ADRs)
-Use the guide in the attached ADR.txt to document all the key decisions made in steps A through G using the ADR.txt framework attached. Ensure at least 10+ ADRs are written. Format as markdown code.
+Use the guide in the attached ADR.txt to document all the key decisions made in steps A through G using the ADR.txt framework attached. Ensure at least 10+ ADRs are written. Format as markdown code. (MUST USE ADR.txt)
 
-I. Create a story arc covering our solution using the framework in story.txt by providing a one sentence for each of the 10 points. For each point provide short bullet points for a presentation.
+I. Create a narrative covering our solution using the framework in story.txt by providing a one sentence for each of the 10 points. For each point provide short bullet points for a presentation. (MUST USE story.txt)
 
 To conclude, offer the user more details on setting up a particular service, cost optimization strategies, or security best practices. 
 
