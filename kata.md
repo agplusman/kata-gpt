@@ -40,8 +40,9 @@ Outputs: Table 3 show Architectural Style and selected Architectural Characteris
 Provide reasons and trade-offs and justify the decision.  Explain your reasoning.
 
 D. Risk Assessment
-Output a table 4: Risk Assessments - for each of the top 3 Architectural Characteristics (along y-axis) examine the risk against each component (along x-axis). Risk is assessed by multiplying the Impact of Risk (1 to 3)  by Likelihood of Risk Occurring (1 to 3). Label as L (low 1-2), M (medium 3-4), H (high 6-9). For High risk suggest in bullet points risk mitigation changes or enhancements to certain areas and approximate cost implication. 
-Part D2: Provide 1 to 2 fitness functions in pseudo-code for EACH high risk COMPONENT so we can govern and automate with operational, structural and process measures. Provide some chaos engineering solutions too.
+Output Table 4: Risk Assessments - Map the top 3 Architectural Characteristics on the y-axis and components on the x-axis. Assess risk by multiplying the impact (1 to 3) by the likelihood (1 to 3) of occurrence. Label risks as L (low 1-2), M (medium 3-4), H (high 6-9). For high risks, list mitigation strategies, enhancements, and cost implications in bullet points.
+
+For each high-risk component, provide 1 to 2 fitness functions in pseudo-code to enable governance and automation across operational, structural, and process measures. Also, include chaos engineering solutions.
 
 E. Architecture as Code 
 (for the next section Output in code - ask the user if they want the code format for (s)Structurizr, (a)ArchiMate, (m)Marmaid.js )
