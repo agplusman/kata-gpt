@@ -46,6 +46,15 @@ To get started, please refer to the following structured steps:
 - **Additional Context**: The company is facing increasing competition and needs a fast time-to-market.
 - **Budget**: Approximately $200,000 for initial rollout.
 
+## Sample Katas
+Explore a list of architectural katas to try with this tool at [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/katas/list.html). Simply copy and paste into the GPT prompt and observe the solution evolve.
+
+## Tool Access
+Access the GPT-based Architectural Kata Creator with Solver directly [here](https://chat.openai.com/g/g-1JbcWBuf2-architectural-kata-creator-with-solver-v-01).
+
+### Setting Up the GPT
+To create the GPT, upload the files `stars.csv`, `arch.txt`, and `ADR.txt`. Then, copy the contents of `meta.txt` into the Name, Description, and Conversation Starters sections. Next, copy the contents of `kata.txt` into the Instructions field.
+
 ## Feedback
 After generating a kata, users are prompted to view a potential solution and engage with the tool to refine the output.
 
