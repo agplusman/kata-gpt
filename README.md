@@ -54,6 +54,54 @@ Explore a list of architectural katas to try with this tool at [Fundamentals of 
 ## Tool Access
 Access the GPT-based Architectural Kata Creator with Solver directly [here](https://chat.openai.com/g/g-1JbcWBuf2-architectural-kata-creator-with-solver-v-01).
 
+GPT's are reknown for not always followong instructions. These are some further questions you can ask it.
+### Deeper Dive Questions for GPT
+
+**A. Architectural Characteristics**
+   - List the seven architectural characteristics mentioned in the arch.txt file.
+   - Sort the architectural characteristics in order of priority.
+   - Provide bullet points outlining the trade-offs for each prioritized characteristic.
+
+**B. Component Design**
+   - Can you list the initial top-level components of the system?
+   - How are actions assigned to specific components in the system?
+   - Could you provide a table showing the alignment of user requirements with system components?
+
+**C. Architectural Style**
+   - List the possible architectural styles with their star ratings from starst.txt.
+   - Select and justify the final choice of architectural style based on top characteristics.
+   - Provide bullet points detailing the reasons and trade-offs for the chosen architectural style.
+
+**D. Risk Assessment**
+   - Could you generate a table mapping the top three risks with architectural characteristics?
+   - Describe the process for calculating the risk scores.
+   - Provide bullet points of mitigation strategies for identified high risks.
+
+**E. Architecture as Code**
+   - List the options for code formats and ask which one should be used for detailing the architecture.
+   - Can you show the detailed design in the selected code format?
+   - Provide a description of component communications and the reasons for choosing synchronous or asynchronous methods.
+
+**F. Database Schema**
+   - Show how you would design the database schema for a distributed system.
+   - List the components designed as Quanta.
+   - Provide a Structurizr sequence diagram of the designed schema.
+
+**G. Implementation**
+   - List the cloud providers available and ask which one to use for the implementation.
+   - Provide detailed suggestions for system sizing and scaling.
+   - Show a breakdown of estimated costs and resources required for the selected cloud provider.
+
+**H. Architectural Decision Records (ADRs)**
+   - List key decisions to be documented in the ADRs.
+   - Ask for specific areas where additional decision records might be necessary.
+   - Provide a format for documenting these decisions as per the ADR.txt guide.
+
+**I. Create a narrative**
+   - List the points to be covered in the narrative according to the story.txt framework.
+   - Ask which specific project milestones should be highlighted in the narrative.
+   - Provide a format for the presentation bullet points related to each narrative sentence.
+
 ### Setting Up the GPT
 To create the GPT, upload the files `stars.csv`, `arch.txt`, and `ADR.txt`. Then, copy the contents of `meta.txt` into the Name, Description, and Conversation Starters sections. Next, copy the contents of `gpt_instructions.txt` into the Instructions field.
 
