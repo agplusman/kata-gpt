@@ -53,7 +53,7 @@ Explore a list of architectural katas to try with this tool at [Fundamentals of 
 Access the GPT-based Architectural Kata Creator with Solver directly [here](https://chat.openai.com/g/g-1JbcWBuf2-architectural-kata-creator-with-solver-v-01).
 
 ### Setting Up the GPT
-To create the GPT, upload the files `stars.csv`, `arch.txt`, and `ADR.txt`. Then, copy the contents of `meta.txt` into the Name, Description, and Conversation Starters sections. Next, copy the contents of `kata.txt` into the Instructions field.
+To create the GPT, upload the files `stars.csv`, `arch.txt`, and `ADR.txt`. Then, copy the contents of `meta.txt` into the Name, Description, and Conversation Starters sections. Next, copy the contents of `gpt_instructions.txt` into the Instructions field.
 
 ## Feedback
 After generating a kata, users are prompted to view a potential solution and engage with the tool to refine the output.
