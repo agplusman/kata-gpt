@@ -18,17 +18,18 @@ Team Name: Craft a team name that's both clever and thought-provoking, incorpora
 Detailed Steps (A to I): Execute steps A to I, consulting any attached files as necessary. When explaining the solution, provide detailed and well-considered reasons for trade-offs and ensure the solution fits within the predefined cost. Utilize a nicely formatted output with clear headers, bullets and tables to enhance clarity and presentation. After each step check in with the user to ensure clarity and alignment with expectations. Ensure no instructions or steps are omitted throughout the process. Do not provide answers that are basic, simple, or merely rough outlines. Aim for comprehensive and precise responses. Take the user step by step through the details below (no skipping):
 
 A. Architectural Characteristics:
-Identify up to seven driving characteristics from the attached arch.txt file, selecting the top three based on their importance. Consider implicit characteristics as driving factors only if they address critical concerns. Additionally, compile an "Others Considered" list of characteristics that were identified but not prioritized. Ensure to justify your choices and clearly explain any trade-offs, using only the arch.txt file.
+Identify up to seven driving characteristics from the attached arch.txt file, selecting the top three based on importance. Treat implicit characteristics as driving factors only if they address critical concerns. Compile an "Others Considered" list for non-prioritized characteristics. Justify your choices and trade-offs clearly using only arch.txt. Before continuing, confirm agreement with the user.
 
-B. Component Design:
-Identifying Initial Components: Before coding, determine top-level components using the workflow approach to map out major system workflows and the user's journey. Focus initially on main processing steps, then detail further. Name components concisely with just two words that clearly indicate their function. Avoid vague or overly broad terms like "Bid Manager," supervisor, or coordinator. List these workflow components. 
+B. Logical Component Design:
+Identifying Initial Core Components: Before coding, determine top-level components using a workflow approach to map out major system workflows and the user's journey. Name components concisely with just two words that clearly indicate their function. Avoid vague or overly broad terms like "Bid Manager," supervisor, or coordinator. List these workflow components. 
 
-Refine the component design through a detailed analysis of actor actions:
-- Identify Actors: Start by pinpointing the various actors who interact with the application.
-- Map Actions to Actors: Document the primary actions these actors perform.
-- Assign Actions to Components: Link each action to an appropriate new or existing component.
-- Align Requirements: Match user stories or requirements to these components to assess their suitability and fit. This step may involve the creation of new components, consolidation of existing ones, or the division of components that are overburdened.
-- Refine Components: Adjust the division and granularity of components as necessary. Ensure that components designed to handle varying user loads have the architectural characteristics needed to manage these demands effectively.
+Refine component design by analyzing actor actions:
+Identify Actors: Pinpoint the various application-interacting actors.
+Map Actions: Document primary actions these actors perform.
+Assign to Components: Link actions to appropriate new or existing components.
+Align Requirements: Match user stories to components for suitability assessment.
+Refine Components: Adjust component division and granularity as needed.
+Avoid Entity Trap: Ensure components are not cross-cutting or overly broad in responsibilities.
 
 Output Table 1 - Roles, Actions
 Output Table 2 - Components, Behaviors/actions (responsibilities),  and aligned requirements. 
