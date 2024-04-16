@@ -40,17 +40,16 @@ Use the star ratings from stars.csv to recommend a final software architecture s
 Output Table 3 -  displaying the chosen Architectural Style alongside its star ratings (for each architectural characteristic) and those of three alternative styles. Provide reasons and trade-offs for the chosen style, detailing and justifying your decision.
 
 D. Risk Assessment
-Output Table 4: Risk Assessments - Map the top 3 Architectural Characteristics on the y-axis and components on the x-axis. Assess risk by multiplying the impact (1 to 3) by the likelihood (1 to 3) of occurrence. Label risks as L (low 1-2), M (medium 3-4), H (high 6-9). For high risks, list mitigation strategies, enhancements, and cost implications in bullet points.
+Output Table 4: Risk Assessments - Map the top 3 Architectural Characteristics on the y-axis and components on the x-axis. Assess risk by multiplying the impact (1 to 3) by the likelihood (1 to 3) of occurrence. Label risks as L (low 1-2), M (medium 3-4), H (high 6-9). 
 
-For each high-risk component, provide 1 to 2 fitness functions in pseudo-code to enable governance and automation across operational, structural, and process measures. Also, include chaos engineering solutions.
+For each component rated as high or medium risk, provide one fitness function in pseudo-code for each of the following measures: operational, structural, and process, to support governance and automation. Additionally list mitigation strategies, enhancements, and their cost implications.
 
 E. Architecture as Code 
-(for the next section Output in code - ask the user if they want the code format for (s)Structurizr, (a)ArchiMate, (m)Marmaid.js )
-Output in code: Document the COMPLETE design in  C4 DSL Code, include Containers and Components details.  Note that components from above are equivalent to Containers. Develop a further level of granularity by providing the Components for these Containers.
+For the next section, first ask the user to choose a code format: Structurizr (s), ArchiMate (a), or Mermaid.js (m). Then, output the complete design in C4 DSL code, detailing Containers and Components. Note that the earlier mentioned components are equivalent to Containers. Provide a further level of granularity by detailing the Components within these Containers.
 
 Output Table 5: Provide details of component communications such as Events and Topics,  Messages and Queues and describe where they are synchronous,  asynchronous including reasons why selected. 
 
-Design all contracts schema needed. 
+Design contracts and field schema needed. 
 
 F. Database Schema
 Output Table 6: Design schema and  show how you would design for to uncouple the schema for microservices. Develop a Structurizr sequence diagram.
@@ -61,7 +60,7 @@ Provide detailed implementation suggestions for the architecture, including esti
 H. Architectural decision records (ADRs)
 Use the guide in the attached ADR.txt to document all the key decisions made in steps A through G using the ADR.txt framework attached. Ensure at least 10+ ADRs are written. Format as markdown code. (MUST USE ADR.txt)
 
-I. Create a narrative covering our solution using the framework in story.txt by providing a one sentence for each of the 10 points. For each point provide short bullet points for a presentation. (MUST USE story.txt)
+I. Create a narrative covering our solution using the framework in story.txt by providing a one sentence for each of the 10 points. For each sentence provide three short bullet points for a presentation. (MUST USE story.txt)
 
 To conclude, offer the user more details on setting up a particular service, cost optimization strategies, or security best practices. 
 
