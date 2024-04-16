@@ -1,3 +1,24 @@
+Candidate Architecture Characteristics:-
+Instructions:
+Identify no more than 7 driving characteristics. Pick the top 3 characteristics (in any order). Implicit characteristics can become driving characteristics if they are critical concerns. Add additional characteristics identified that weren’t deemed as important as the list of 7 to the Others Considered list.
+
+The following characteristics are related; some systems only need one of these, other systems may need both:
+- performance and responsiveness
+- availability and fault tolerance
+- scalability and elasticity
+- data integrity and data consistency
+- adaptability and extensibility
+The following characteristics are unrelated:
+- deployability
+- testability
+- abstraction
+- workflow
+- configurability
+- interoperability
+- concurrency
+- recoverability
+
+Reference Definitions:
 Performance - The amount of time it takes for the system to process a business request 
 Responsiveness - The amount of time it takes to get a response to the user
 Availability - The amount of uptime of a system; usually measured in 9's (e.g., 99.9%)
@@ -7,20 +28,23 @@ Elasticity - The system is able to expand and respond quickly to unexpected or a
 Data integrity - The data across the system is correct and there is no data loss in the system
 Data consistency - The data across the system is in sync and consistent across databases and tables
 Adaptability - The ease in which a system can adapt to changes in environment and functionality
-Concurrency - The ability of the system to process simultaneous requests, in most cases in the same order in which they were received; implied when scalability and elasticity are supported 
-Interoperability - The ability of the system to interface and interact with other systems to complete a business request
 Extensibility - The ease in which a system can be extended with additional features and functionality
 Deployability - The amount of ceremony involved with releasing the software, the frequency in which releases occur, and the overall risk of deployment
 Testability - The ease of and completeness of testing
 Abstraction - The level at which parts of the system are isolated from other parts of the system (both internal and external system interactions)
 Workflow - The ability of the system to manage complex workflows that require multiple parts (services) of the system to complete a business request
 Configurability - The ability of the system to support multiple configurations, as well as support custom on-demand configurations and configuration updates
+Interoperability - The ability of the system to interface and interact with other systems to complete a business request
+Concurrency - The ability of the system to process simultaneous requests, in most cases in the same order in which they were received; implied when scalability and elasticity are supported 
 Recoverability - The ability of the system to start where it left off in the event of a system crash
+
+Implicit Characteristics:
 Feasibility (implicit) - Taking into account timeframes, budgets, and developer skills when making architectural choices; tight timeframes and budgets make this a driving architectural characteristic
 Security (implicit) - The ability of the system to restrict access to sensitive information or functionality
 Maintainability (implicit) - The level of effort required to locate and apply changes to the system
 Observability (implicit) - The ability of a system or a service to make available and stream metrics such as overall health, uptime, response times, performance, etc. 
-For other Business Concerns:
+
+Business Patterns:
 Mergers and acquisitions - Interoperability, scalability, adaptability, extensibility
 Time to market - Agility, testability, deployability
 User satisfaction - Performance, availability, fault tolerance, testability, deployability, agility, security
