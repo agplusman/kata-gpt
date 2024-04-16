@@ -1,6 +1,6 @@
 <img src="kata-gpt-front.png" alt="OpenAI Kata GPT" height="650">
 # Architectural Kata Creator with Solver (v.01)
-<img src="kata-gpt-logo.png" alt="Kata GPT Logo" 1height="150">
+
 
 ## Overview
 The **Architectural Kata Creator with Solver** is an open-source tool designed to assist software architects in generating and refining architectural katas. This tool offers solutions that include trade-offs of architectural characteristics, component design, appropriate architectural styles, risk assessment and mitigation strategies, fitness functions, C4 code design, and cloud implementations.
@@ -113,3 +113,4 @@ After generating a kata, users are prompted to view a potential solution and eng
 
 ## Conclusion
 The Architectural Kata Creator with Solver aims to facilitate creative yet realistic architectural design exercises, adaptable to real-world applications. We welcome community involvement to enhance and evolve this tool.
+<img src="kata-gpt-logo-l.png" alt="Kata GPT Logo">
