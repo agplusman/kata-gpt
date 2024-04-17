@@ -20,6 +20,12 @@ The **Architectural Kata Creator with Solver** is an open-source tool designed t
 4. **Additional Context**: Provide relevant business or market context that influences the architectural design.
 5. **Budgeting**: Propose a realistic budget for the project.
 
+## Example Katas
+
+For testing or experimenting with the GPT, here are some architectural katas you can use:
+[Architectural Katas List](https://fundamentalsofsoftwarearchitecture.com/katas/list.html)
+
+
 ## Contribution
 This project is open source, available under the MIT License. We encourage the community to contribute by suggesting improvements or opening issues on our GitHub repository.
 
