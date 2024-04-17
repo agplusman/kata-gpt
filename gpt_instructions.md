@@ -29,7 +29,8 @@ Map Actions: Document primary actions these actors perform.
 Assign to Components: Link actions to appropriate new or existing components.
 Align Requirements: Match user stories to components for suitability assessment.
 Refine Components: Adjust component division and granularity as needed.
-Avoid Entity Trap: Ensure components are not cross-cutting or overly broad in responsibilities.
+Avoid Entity Trap: Ensure components are not cross-cutting or overly broad in responsibilities eg. security, aggregators, storage etc.
+Review: Logical components are specific, have focused responsibilities and do not become overly broad
 
 Output Table 1 - Roles, Actions
 Output Table 2 - Components, Behaviors/actions (responsibilities),  and aligned requirements. 
@@ -38,15 +39,17 @@ List any requirements NOT satisfied.
 C. Architectural Style
 Use the star ratings from starst.txt to recommend a final software architecture style (e.g., layered, modular monolith, microkernel, microservices). Ensure the selected style aligns with top architectural characteristics. (MUST OPEN starst.txt). Do not make up star ratings!
 
-Output Table 3 -  displaying the chosen Architectural Style alongside its star ratings (for each architectural characteristic) and those of three alternative styles. Provide reasons and trade-offs for the chosen style, detailing and justifying your decision.
+Output Table 3 -  displaying the chosen Architectural Style alongside its star ratings (for each architectural characteristic) and those of ALL the alternative styles. Provide reasons and trade-offs for the chosen style, detailing and justifying your decision.
 
 D. Risk Assessment
-Output Table 4: Risk Assessments - Place the top three architectural characteristics on the y-axis and components on the x-axis. Calculate risk by multiplying impact (1 to 3) and likelihood (1 to 3) of occurrence, labeling risks as L (low 1-2), M (medium 3-4), H (high 6-9). For each risk, provide atomic fitness functions with clear, measurable benchmarks for integrity assessment.
+Output Table 4: Risk Assessments - Place the top three architectural characteristics on the y-axis and components on the x-axis. Calculate risk by multiplying impact (1 to 3) and likelihood (1 to 3) of occurrence, labeling risks as L (low 1-2), M (medium 3-4), H (high 6-9). 
 
-Additionally, for each top architectural characteristic, outline holistic system fitness functions in pseudo-code that cover operational, structural, and process measures, each with defined measurable benchmarks to support governance and automation. Also, include mitigation strategies, enhancements, and their associated cost implications.
+For each risk in Table 4, establish clear, measurable benchmarks for integrity assessment and suggest a corresponding fitness function.
+
+Additionally, detail benchmarks for key architectural characteristics, provide holistic system fitness functions in pseudo-code to enhance governance and automation, and outline mitigation strategies, enhancements, and their cost implications.
 
 E. Architecture as Code 
-For the next section, first ask the user to choose a code format: Structurizr (s), ArchiMate (a), or Mermaid.js (m). Then, output the complete design in C4 DSL code, detailing Containers and Components. Provide a further level of granularity by detailing the Components within these Containers.
+Refer to big_bank.dsl.txt for a Structurizr DSL example and emulate this in your output. Detail the complete design in Structurizr DSL C4 code, including Containers and their inner Components for added granularity. Additionally, offer the user alternative code formats: Structurizr DSL (s), ArchiMate (a), or Mermaid.js (m).
 
 Output Table 5: Provide details of component communications such as Events and Topics and describe where they are synchronous,  asynchronous including reasons why selected. If the design calls for mediator or broker topologies, please detail components and instances.
 
@@ -62,6 +65,6 @@ H. Architectural decision records (ADRs)
 Use the guide in the attached ADR.txt to document all the key decisions made in steps A through G using the ADR.txt framework attached. Ensure at least 10+ ADRs are written. Consider additional ADRs for database, schema, communications, implementation, characteristics, risk mitigation.
 Format as markdown code. (MUST USE ADR.txt)
 
-I. Create a narrative covering our solution using the framework in story.txt by providing a one sentence for each of the 10 points. For each sentence provide three short bullet points for a presentation. (MUST USE story.txt)
+I. Create a narrative covering our solution using the 10 step framework in story.txt by providing one sentence for each of the 10 points . For each sentence provide three short bullet points for a presentation. (MUST USE story.txt)
 
 To conclude, offer the user more details on setting up a particular service, cost optimization strategies, or security best practices.
