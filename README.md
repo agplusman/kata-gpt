@@ -5,6 +5,90 @@
 ## Overview
 The **Architectural Kata Creator with Solver** is an open-source tool designed to assist software architects in generating and refining architectural katas. This tool offers solutions that include trade-offs of architectural characteristics, component design, appropriate architectural styles, risk assessment and mitigation strategies, fitness functions, C4 code design, and cloud implementations.
 
+##Using The Code GPT: Architectural Kata Creator with Solver (v.01)
+Visit the tool called Architectural Kata Creator with Solver (v.01) at [https://chat.openai.com/g/g-1JbcWBuf2-architectural-kata-creator-with-solver-v-01](https://chat.openai.com/g/g-1JbcWBuf2-architectural-kata-creator-with-solver-v-01). To start, input a use case into the prompt. For instance, use the following scenario for testing:
+
+**TripEZ Use Case Description:**
+
+- **Organization of Reservations**: Continuously scan the user's email for travel-related messages to keep reservations up to date on an online dashboard, accessible via web and mobile.
+
+- **Real-Time Updates**: Interface with travel partners to fetch real-time updates (delays, cancellations, gate changes) and display these in the app within five minutes.
+
+- **Manual Reservation Management**: Allow users to manually add, update, or delete reservations.
+
+- **Trip Grouping and Management**: Enable grouping of travel items by trip, with automatic removal post-trip.
+
+- **Social Sharing**: Provide functionalities for sharing trip details through social media and directly with contacts.
+
+- **Rich User Interface**: Ensure a high-quality interface across all platforms.
+
+- **Reporting**: Generate comprehensive end-of-year travel reports.
+
+- **Data Analytics**: Collect data on travel trends and preferences for analysis.
+
+- **Development Timeline**: Aim to launch TripEZ in six months, aligning with a key trade show.
+
+This description should be pasted into the Architectural Kata Creator with Solver to begin generating solutions.
+
+GPT models are notorious for producing variable responses and may not always align with the instructions provided. To guide the model effectively and ensure nothing is missed, refer to the following steps:
+
+Use these steps as a guide to navigate and correct the course of the conversation with the GPT model.
+
+- **A. Architectural Characteristics**
+  - Identify up to seven characteristics from arch.txt.
+  - Prioritize the top three, providing justifications.
+  - List additional characteristics under "Others Considered."
+
+- **B. Logical Component Design**
+  - Map initial workflow components.
+  - Identify actors and document their actions.
+  - Assign actions to specific components.
+  - Check alignment with user requirements.
+  - Refine component details as necessary.
+
+- **C. Architectural Style**
+  - Utilize star ratings from starst.txt.
+  - Select a suitable architectural style.
+  - Justify the selection based on alignment with characteristics.
+
+- **D. Database Schema**
+  - Design a schema adaptable for distributed systems.
+  - Organize components into Quanta for scalability.
+
+- **E. Communication**
+  - Design communications between components.
+  - Define message, event, and queue types.
+  - Include error handling and API layer designs.
+
+- **F. Architecture as Code**
+  - Use Structurizr DSL for architecture description.
+  - Detail all components and their interactions.
+  - Generate a sequence diagram for visual aid.
+
+- **G. Risk Assessment**
+  - Perform a risk assessment across components.
+  - Use impact and likelihood to rate risks.
+  - Label and manage risks accordingly.
+
+- **H. Governance, Benchmarks, and Mitigation**
+  - Establish measurable benchmarks for system assessment.
+  - Develop system fitness functions in pseudo-code.
+  - Detail mitigation strategies and their financial implications.
+
+- **I. Implementation**
+  - Determine an appropriate cloud provider.
+  - Outline architectural implementation with size and cost estimates.
+  - Provide a detailed topology outline for evaluation.
+
+- **J. Architectural Decision Records**
+  - Document key decisions using guidance from ADR.txt.
+  - Include decisions related to database, communications, and mitigation.
+
+- **K. Solution Narrative**
+  - Develop the narrative using the "story.txt" framework.
+  - Summarize key insights in an executive summary.
+
+
 ## Key Features
 - **Architectural Characteristics Analysis**: Define up to seven key architectural characteristics from a pre-defined set.
 - **Component Design**: Identify and refine software components based on actor actions and system requirements.
