@@ -5,7 +5,7 @@
 ## Overview
 The **Architectural Kata Creator with Solver** is an open-source tool designed to assist software architects in generating and refining architectural katas. This tool offers solutions that include trade-offs of architectural characteristics, component design, appropriate architectural styles, risk assessment and mitigation strategies, fitness functions, C4 code design, and cloud implementations.
 
-##Using The Code GPT: Architectural Kata Creator with Solver (v.01)
+## Using The Code GPT: Architectural Kata Creator with Solver (v.01)
 Visit the tool called Architectural Kata Creator with Solver (v.01) at [https://chat.openai.com/g/g-1JbcWBuf2-architectural-kata-creator-with-solver-v-01](https://chat.openai.com/g/g-1JbcWBuf2-architectural-kata-creator-with-solver-v-01). To start, input a use case into the prompt. For instance, use the following scenario for testing:
 
 **TripEZ Use Case Description:**
