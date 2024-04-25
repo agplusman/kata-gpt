@@ -1,8 +1,9 @@
-Candidate Architecture Characteristics:-
+Candidate Architecture Characteristics:
 Instructions:
-Identify no more than 7 driving characteristics. Pick the top 3 characteristics (in any order). Implicit characteristics can become driving characteristics if they are critical concerns. Add additional characteristics identified that weren’t deemed as important as the list of 7 to the Others Considered list.
+Identify no more than 7 driving characteristics. Pick the top 3 characteristics (in any order). Implicit characteristics can become driving characteristics (but NOT top 3) if they are critical concerns. Add additional characteristics identified that weren’t deemed as important as the list of 7 to the Others Considered list. Please label Implicit Characteristics (Implicit). 
+Different sets of characteristics tailored to similar behavior scopes in quantum components may result in the identification of multiple characteristic sets.
 
-The following characteristics are related; some systems only need one of these, other systems may need both:
+The following characteristics are related; some systems only need one of these, other systems may need both. Mention BOTH characteristics where applicable:
 - performance and responsiveness
 - availability and fault tolerance
 - scalability and elasticity
@@ -37,6 +38,7 @@ Configurability - The ability of the system to support multiple configurations, 
 Interoperability - The ability of the system to interface and interact with other systems to complete a business request
 Concurrency - The ability of the system to process simultaneous requests, in most cases in the same order in which they were received; implied when scalability and elasticity are supported 
 Recoverability - The ability of the system to start where it left off in the event of a system crash
+Evolvability - evolvability is a meta-characteristic, an architectural wrapper that protects all the other architectural characteristics. The ability of a system to adapt and evolve over time in response to changing conditions, requirements, or technologies. A system designed for evolvability is typically easier to maintain, extend, and modify.
 
 Implicit Characteristics:
 Feasibility (implicit) - Taking into account timeframes, budgets, and developer skills when making architectural choices; tight timeframes and budgets make this a driving architectural characteristic
@@ -44,7 +46,7 @@ Security (implicit) - The ability of the system to restrict access to sensitive 
 Maintainability (implicit) - The level of effort required to locate and apply changes to the system
 Observability (implicit) - The ability of a system or a service to make available and stream metrics such as overall health, uptime, response times, performance, etc. 
 
-Business Patterns:
+Business Requirements Translations:
 Mergers and acquisitions - Interoperability, scalability, adaptability, extensibility
 Time to market - Agility, testability, deployability
 User satisfaction - Performance, availability, fault tolerance, testability, deployability, agility, security
