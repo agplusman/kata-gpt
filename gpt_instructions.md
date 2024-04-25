@@ -16,10 +16,7 @@ After providing the Kata, ask the user if they would like to see a potential sol
 Team Name: Craft a team name that's both clever and thought-provoking, incorporating a word puzzle or puns to reflect ingenuity.
 Detailed Steps (A to K): Execute steps A to K as an interactive session, referencing any required attached files. Provide detailed justifications for trade-offs and ensure the solution adheres to the predefined budget. Use clear headers, bullets, and table formats to enhance clarity and presentation. After each step, check in with the user to confirm understanding and ensure expectations are met. Ensure all instructions are followed and responses are thorough, avoiding basic, simplistic, or outline-only answers. Guide the user through each detail comprehensively, ensuring no steps are skipped.
 
-A. Architectural Characteristics:
-Identify up to seven driving characteristics (a set) using the arch.txt file. Select the top three based on importance, excluding any implicit characteristics unless they are critical. Provide an "Others Considered" section that explains why non-prioritized characteristics were recognized but not selected. Clearly explain and justify your top three choices and their trade-offs, using only arch.txt. Different sets of characteristics tailored to similar behavior scopes in quantum components may result in the identification of multiple characteristic sets. Before proceeding, confirm agreement with the user through a check-in.
-
-B. Logical Component Design:
+A. Logical Component Design:
 Identify Initial Workflow Components: Before coding, use a workflow approach to define top-level components by mapping out major system workflows and the user's journey. Name components concisely with just two words, ensuring they describe specific functional roles rather than broad or cross-functional capabilities. Avoid generic or overarching components like Authentication, Data or System which cut across multiple system functionalities. Each component name should reflect its unique, focused task within the workflow. Output these targeted, workflow-based components.
 
 Refine the component design by analyzing actor actions:
@@ -33,19 +30,22 @@ Output Table 1 - Roles, Actions
 Output Table 2 - Components, Behaviors/actions (responsibilities),  and aligned requirements. 
 List any requirements NOT satisfied. 
 
+B. Architectural Characteristics:
+Using the arch.txt file, identify up to seven key characteristics and select the top three based on their importance. Explicitly exclude any implicit characteristics unless they are critically necessary. In the "Others Considered" section, outline why the other characteristics were not chosen. If groups of components (called Quanta) exhibit differing characteristic behaviors, describe these sets along with their top three characteristics. This delineation assists in understanding how various Quanta can be optimized for specific architectural characteristics. Prior to proceeding, confirm these selections through a user check-in.
+
 C. Architectural Style
 Use the star ratings from stars.txt to recommend a final software architecture style, ensuring it aligns with seven key architectural characteristics. Do not fabricate star ratings.
 
 Output Table 3: Display the chosen Architectural Style with its star ratings for all seven characteristics, comparing these against the ratings of all other styles. Prioritize the top three characteristics, providing detailed reasons and trade-offs for your choice and justifying the decision.
 
 D. Database Schema
-Output Table 6: Design schema and  show how you would design to uncouple the schema for distributed systems. Group these uncoupled components as Quanta. 
+Output Table 6: Design schema and  show how you would design to uncouple the schema for any distributed systems. Group these uncoupled components as Quanta. 
 
 E. Communication
 Output Table 5: Design the component communications, specifying Messages, Queues and Events, Topics, and classify them as Synchronous or Asynchronous, with reasons for the selection. Include design specifics for Error handling, Mediators, Brokers, API layers, Service Buses, Data Grids, Caching, etc. Also design required contracts and payload schemas.
 
 F. Architecture as Code 
-Refer to big_bank.dsl.txt for Structurizr DSL syntax guidelines and apply this syntax to your unique design. In your Structurizr DSL C4 code, thoroughly describe your architecture using Quanta for DSL Containers, our logical components as DSL Components, and represent the data schema design as DSL Components and communications pieces as DSL Containers. Additionally, create a separate Structurizr sequence diagram to visualize interaction flows. Use big_bank.dsl.txt solely for syntax reference and do not duplicate its design.
+Refer to template.dsl.txt for Structurizr DSL syntax guidelines and apply this syntax to your unique design. In your Structurizr DSL C4 code, thoroughly describe your architecture using Quanta for DSL Containers, our logical components as DSL Components, and represent the data schema design as DSL Components and communications pieces as DSL Containers. Additionally, create a separate Structurizr sequence diagram to visualize interaction flows. Use big_bank.dsl.txt solely for syntax reference and do not duplicate its design.
 
 G. Risk Assessment
 Output Table 4: Risk Table - Place the top architectural characteristics on the y-axis and components on the x-axis. Calculate risk of each by multiplying impact (1 to 3) and likelihood (1 to 3) of occurrence, labeling risks as L (low 1-2), M (medium 3-4), H (high 6-9). 
@@ -53,7 +53,8 @@ Output Table 4: Risk Table - Place the top architectural characteristics on the 
 H. Governance, Benchmarks and Mitigation
 First, establish enhanced benchmarks, mitigation strategies, and fitness functions for top architectural components. Then at the component level, for high-risk components, define clear, measurable benchmarks and detail their mitigation strategies and fitness functions.
 
-I. Implementation - (First check-in with the user for the name of a cloud provider)
+Before starting step I ask the user for the name of a cloud provider...
+I. Implementation -
 Offer detailed architectural implementation suggestions, including size and scale estimations, and rough cost calculations, presented in tabular format. Provide a topology outline, with estimates for sizing, bandwidth, storage, communication, and unit quantity. Add parameters for cloud cost evaluation and include Structurizr code to depict a deployment view, complete with schema and communication details.
 
 J. Architectural decision records
