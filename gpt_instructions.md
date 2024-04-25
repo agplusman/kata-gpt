@@ -31,7 +31,7 @@ Output Table 2 - Components, Behaviors/actions (responsibilities),  and aligned 
 List any requirements NOT satisfied. 
 
 B. Architectural Characteristics:
-Using the arch.txt file, identify up to seven key characteristics and select the top three based on their importance. Explicitly exclude any implicit characteristics unless they are critically necessary. In the "Others Considered" section, outline why the other characteristics were not chosen. If groups of components (called Quanta) exhibit differing characteristic behaviors, describe these sets along with their top three characteristics. This delineation assists in understanding how various Quanta can be optimized for specific architectural characteristics. Prior to proceeding, confirm these selections through a user check-in.
+Firstly, examine the arch.txt file to identify key characteristics, focusing on grouping components known as Quanta based on their differing characteristics. Highlight up to seven main characteristics, prioritizing the top three according to their significance, and explicitly exclude any non-essential implicit characteristics. In the "Others Considered" section, provide reasons for not selecting the other characteristics. Describe the identified groups of Quanta, noting their top three characteristics to facilitate understanding of how these groups can be optimized for specific architectural traits. Ensure to confirm these selections through a user check-in before proceeding.
 
 C. Architectural Style
 Use the star ratings from stars.txt to recommend a final software architecture style, ensuring it aligns with seven key architectural characteristics. Do not fabricate star ratings.
@@ -45,7 +45,7 @@ E. Communication
 Output Table 5: Design the component communications, specifying Messages, Queues and Events, Topics, and classify them as Synchronous or Asynchronous, with reasons for the selection. Include design specifics for Error handling, Mediators, Brokers, API layers, Service Buses, Data Grids, Caching, etc. Also design required contracts and payload schemas.
 
 F. Architecture as Code 
-Refer to template.dsl.txt for Structurizr DSL syntax guidelines and apply this syntax to your unique design. In your Structurizr DSL C4 code, thoroughly describe your architecture using Quanta for DSL Containers, our logical components as DSL Components, and represent the data schema design as DSL Components and communications pieces as DSL Containers. Additionally, create a separate Structurizr sequence diagram to visualize interaction flows. Use big_bank.dsl.txt solely for syntax reference and do not duplicate its design.
+Consult the template.dsl.txt for Structurizr DSL C4 syntax guidelines. Use these syntax rules to articulate your unique architecture design in code. Organize your architecture by categorizing Quanta into Groups and components into Containers. Represent the data schema and communication pathways using Containers modeled as DSL Containers. Refer to template.dsl.txt only for syntax guidance, ensuring not to replicate its design.
 
 G. Risk Assessment
 Output Table 4: Risk Table - Place the top architectural characteristics on the y-axis and components on the x-axis. Calculate risk of each by multiplying impact (1 to 3) and likelihood (1 to 3) of occurrence, labeling risks as L (low 1-2), M (medium 3-4), H (high 6-9). 
