@@ -1,1 +1,200 @@
+/*
+Queues can also be tags Topics
+*/
+workspace "Team Name" "Describe the project..." {
 
+    model {
+
+        user = person "User"
+        app = person "App"
+        softwareSystem = softwareSystem "Software System" {
+            group "API ayer" {
+                api1 = container "API_1"
+                api2 = container "API_2"
+                api3 = container "API_3"
+            }
+            group "Order Placement" {
+                op = container "OP" 
+                opdb = container "OP-DB" {
+                    tags Database
+                }
+                op -> opdb {
+                    tags db
+                }
+            }
+            group "Payment" {
+                pa = container "PA" 
+                padb = container "PA-DB" {
+                    tags Database
+                }
+                pe = container "P_event" {
+                    tags Events
+                }
+                pa -> padb {
+                    tags db
+                }
+                pa -> pe {
+                    tags async
+                }
+                pe -> app {
+                    tags async
+                }
+            } 
+            group "Inventory" {
+                iv = container "IV" 
+                ivdb = container "IV-DB" {
+                    tags Database
+                }
+                iv -> ivdb {
+                    tags db
+                }
+            }  
+            q1 = container "Q1" {
+                tags Queue
+            }                      
+            api1 -> op {
+                tags sync
+            }
+            api2 -> pa {
+                tags hide
+            }
+            api3 -> iv {
+                tags hide
+            }
+
+            op -> pa "pay_for_order" {
+                tags async
+            }
+            pa -> op {
+                tags async
+            }    
+            op -> iv "update_inventory" {
+                tags async
+            }  
+            iv -> op {
+                tags async
+            }      
+        }
+
+        user -> api1 "Places Order to Purchase a Book" {
+            tags sync
+        }
+        api1 -> user {
+            tags sync
+        }
+        app -> q1 {
+            tags async
+        }
+        q1 -> iv {
+            tags async
+        }
+        
+    }
+
+    views {
+        systemContext softwareSystem "Diagram1" {
+            include *
+        }
+        container softwareSystem "Diagram2" {
+            include * 
+        }
+        component op "Diagram3" {
+            include *
+        }
+        styles {
+            element "Person" {
+                background #1168bd
+                color #ffffff
+                //fontSize 22
+                shape Person
+                metadata false
+            }
+            element "Robot" {
+                background #1168bd
+                color #ffffff
+                //fontSize 22
+                shape Robot
+                metadata false
+            }
+            element "Container" {
+                background #ffffff
+                color #000000
+                shape Box
+                stroke #8A19C3
+                metadata false
+                //strokeWidth 10
+                height 150
+                width 350
+            }
+            element "Events" {
+                background #ffffff
+                color #000000
+                shape Ellipse
+                stroke #000000
+            }
+            element "Topic" {
+                shape Pipe
+                //background #F5F4F0
+                stroke #8A19C3
+                //border dashed
+            }
+            element "Queue" {
+                shape Pipe
+                background #ffffff
+                stroke #8A19C3
+            }
+            element "Database" {
+                shape Cylinder
+                stroke #8A19C3
+                metadata false
+            }
+            element "Component" {
+                background #85bbf0
+                color #000000
+            }
+            relationship "sync" {
+                dashed false
+                //routing direct
+                thickness 3
+                color #09F24B
+            }
+            relationship "async" {
+                dashed true
+                //routing direct
+                thickness 3
+                //color #09F24B
+            }           
+            relationship "hide" {
+                color #ffffff
+                thickness 0
+
+            }
+            relationship "db" {
+                dashed false
+                thickness 2
+                color #8A19C3
+            }
+            element "quanta1" {
+                background #C6DAED
+            }
+            element "quanta2" {
+                background #C6EDDB
+            }            
+        }
+
+        terminology {
+            person <term>
+            softwareSystem "v 1.0a"
+            container <term>
+            component <term>
+            deploymentNode <term>
+            infrastructureNode <term>
+            relationship <term>
+        }          
+    }
+
+    configuration {
+        scope softwaresystem
+    }
+
+}
