@@ -1,4 +1,4 @@
-* Requirements Overview
+** Requirements Overview
 Wildlife AI is a charitable trust using AI for wildlife conservation. Wildlife.ai work with grassroots wildlife conservation projects and develop open-source solutions using machine learning. They also organise community events, seminars and educational activities to build and maintain machine learning solutions to reduce the current rate of species extinction.
 
 Assumptions
