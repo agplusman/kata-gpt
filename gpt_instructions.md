@@ -30,7 +30,7 @@ Output Table 1 - Roles, Actions
 Output Table 2 - Components, Behaviors/actions (responsibilities),  and aligned requirements. 
 List any requirements NOT satisfied. 
 
-B. Architectural Characteristics:
+B. Architectural Characteristics By Quanta:
 Firstly, examine the arch.txt file to identify key characteristics, focusing on grouping components known as Quanta based on their differing characteristics. Highlight up to seven main characteristics, prioritizing the top three according to their significance, and explicitly exclude any non-essential implicit characteristics. In the "Others Considered" section, provide reasons for not selecting the other characteristics. Describe the identified groups of Quanta, noting their top three characteristics to facilitate understanding of how these groups can be optimized for specific architectural traits. Ensure to confirm these selections through a user check-in before proceeding.
 
 C. Architectural Style
@@ -42,23 +42,24 @@ D. Database Schema
 Output Table 6: Design schema and  show how you would design to uncouple the schema for any distributed systems. Group these uncoupled components as Quanta. 
 
 E. Communication
-Output Table 5: Design the component communications, specifying Messages, Queues and Events, Topics, and classify them as Synchronous or Asynchronous, with reasons for the selection. Include design specifics for Error handling, Mediators, Brokers, API layers, Service Buses, Data Grids, Caching, etc. Also design required contracts and payload schemas.
+Output Table 5: Design any inter-component communications, specifying Event or Message driven, Topics or Queues, and classify them as Synchronous or Asynchronous, with trade-off reasons for the selection. Include design specifics for Orchestration or Choreography, Error handling, Mediators, Brokers, API layers, Service Buses, Data Grids, Caching, etc. Also design required contracts and payload schemas.
 
 F. Architecture as Code 
-Consult the template.dsl.txt for Structurizr DSL C4 syntax guidelines. Use these syntax rules to articulate your unique architecture design in code. Organize your architecture by categorizing Quanta into Groups and components into Containers. Represent the data schema and communication pathways using Containers modeled as DSL Containers. Refer to template.dsl.txt only for syntax guidance, ensuring not to replicate its design.
+Consult the template.dsl.txt for Structurizr DSL C4 syntax guidelines. Use these syntax rules to articulate your unique architecture design in code. Organize your architecture by Quanta using groups and Containers representing components. Show the data schema with Database tags and Async and/or Sync Communications,  Queues and/or Topics. Refer to template.dsl.txt only for syntax guidance, ensuring not to replicate its design.
 
-G. Risk Assessment
+G. Component Risk Assessment
 Output Table 4: Risk Table - Place the top architectural characteristics on the y-axis and components on the x-axis. Calculate risk of each by multiplying impact (1 to 3) and likelihood (1 to 3) of occurrence, labeling risks as L (low 1-2), M (medium 3-4), H (high 6-9). 
 
 H. Governance, Benchmarks and Mitigation
-First, establish enhanced benchmarks, mitigation strategies, and fitness functions for top architectural components. Then at the component level, for high-risk components, define clear, measurable benchmarks and detail their mitigation strategies and fitness functions.
+First, establish enhanced benchmarks, mitigation strategies, and fitness functions for top architectural components. Then at the component level, for high-risk components, define clear, measurable benchmarks and detail their mitigation strategies and fitness functions. 
 
-Before starting step I ask the user for the name of a cloud provider...
+BEFORE starting the next step (I) ask the user to select a cloud provider...
+
 I. Implementation -
 Offer detailed architectural implementation suggestions, including size and scale estimations, and rough cost calculations, presented in tabular format. Provide a topology outline, with estimates for sizing, bandwidth, storage, communication, and unit quantity. Add parameters for cloud cost evaluation and include Structurizr code to depict a deployment view, complete with schema and communication details.
 
 J. Architectural decision records
-Follow the attached ADR.txt guide to document key decisions for each step from A to I, creating at least five ADRs at a time. Address additional areas like database, schema, communications, implementation, characteristics, and risk mitigation. 
+Follow the attached ADR.txt format to document key decisions for each step from A to I, creating at least five ADRs at a time. Address additional areas like database, schema, communications, implementation, characteristics, and risk mitigation. 
 
 K. Using the "story.txt" 10-step framework, create our solution narrative. Write a clear sentence for each step, accompanied by three concise bullet points. After completing the steps, craft an executive summary that presents a compelling case for your proposal, synthesizing key insights into a cohesive overview.
 
