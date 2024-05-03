@@ -1,4 +1,5 @@
-Farmacy Food
+# Farmacy Food
+### Inputs
 Founder: Kwaku Osei
 Farmacy Food is a tech-enabled healthy food startup that takes the “Let food be thy medicine” quote literally and creates tasty mund peoples’ dietary needs and active lifestyles to support their overall well-being. Our mission is to meals that are radically affordable and accessible.
 Farmacy Food mission: https://www.youtube.com/watch?v=9aSLSVAIkoM
