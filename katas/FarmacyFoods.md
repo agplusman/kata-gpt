@@ -52,5 +52,65 @@ In the long term, Farmacy Food aims to support multiple vendors through their sy
 **Budget**:
 Approximately $500,000 initially, considering technology integration, development, and scaling needs based on similar startup models.
 
-Would you like to proceed with exploring a potential solution for this architectural challenge?
+### Team Name: NutriNet Architects
+
+**A. Logical Component Design**
+
+### Initial Workflow Components
+
+To establish the foundation for our architecture, we begin by mapping out major system workflows. Here's a breakdown of the targeted, workflow-based components:
+
+- **Inventory Tracker**
+- **Transaction Handler**
+- **Feedback Processor**
+- **Promotion Engine**
+- **Data Aggregator**
+
+### Refine the component design by analyzing actor actions
+
+**Identify Actors:**
+- Customers
+- Kiosk Operators
+- Central Kitchen Staff
+
+**Map Actions:**
+- Customers: Browse products, Make purchases, Provide feedback
+- Kiosk Operators: Process transactions, Update inventory
+- Central Kitchen Staff: Monitor inventory levels, Update product listings
+
+**Assign Actions:**
+- Inventory Tracker: Central Kitchen Staff actions, Kiosk Operator updates
+- Transaction Handler: Customer purchases, Kiosk Operator transactions
+- Feedback Processor: Customer feedback entries
+- Promotion Engine: Apply discounts, Process coupons
+- Data Aggregator: Collect data for analytics and reporting
+
+**Align Requirements:**
+- Each component aligns with the high-level requirements, ensuring functionalities such as third-party API integrations, user accessibility, and feedback mechanisms are embedded within the system.
+
+**Refine Components:**
+- Ensure components are well-defined and specific to their functions without overlapping responsibilities.
+
+### Output Table 1 - Roles, Actions
+
+| **Actor**             | **Role**              | **Actions**                             |
+|-----------------------|-----------------------|-----------------------------------------|
+| Customers             | End Users             | Browse products, Make purchases, Provide feedback |
+| Kiosk Operators       | POS Interface         | Process transactions, Update inventory  |
+| Central Kitchen Staff | Inventory Management  | Monitor inventory levels, Update product listings |
+
+### Output Table 2 - Components, Behaviors/actions (responsibilities), and aligned requirements
+
+| **Component**         | **Responsibilities**                          | **Aligned Requirements**                             |
+|-----------------------|-----------------------------------------------|------------------------------------------------------|
+| Inventory Tracker     | Track and update inventory in real-time       | Integration with smart fridge APIs, Real-time updates |
+| Transaction Handler   | Handle purchasing transactions                | Seamless POS integration, Mobile/Web accessibility   |
+| Feedback Processor    | Process user feedback and survey responses    | User feedback system, Enhance user satisfaction      |
+| Promotion Engine      | Manage and apply promotions and coupons       | Support promotional pricing, Coupon redemption       |
+| Data Aggregator       | Aggregate data for analytics and reporting    | Long-term user data utilization, Vendor support      |
+
+### Requirements Not Satisfied:
+- All listed requirements are currently aligned with the proposed components.
+
+
 
