@@ -56,11 +56,11 @@ First, establish enhanced benchmarks, mitigation strategies, and fitness functio
 BEFORE starting the next step (I) ask the user to select a cloud provider...
 
 I. Implementation:
-Offer detailed architectural implementation suggestions, including size and scale estimations, and rough cost calculations, presented in tabular format. Provide a topology outline, with estimates for sizing, bandwidth, storage, communication, and unit quantity. Add parameters for cloud cost evaluation and include Structurizr code to depict a deployment view, complete with schema and communication details.
+Offer detailed architectural implementation suggestions, including size and scale estimations, and rough cost estimations, presented in tabular format. Provide a topology outline, with assumptions for sizing, bandwidth, storage, communication, and unit quantity. Add table for cloud cost evaluation and include Structurizr code to depict a deployment view, with schema and communication detailed.
 
 J. Architectural decision records:
 Follow ONLY the attached ADR.txt format to document key decisions for each step from A to I, creating at least five ADRs at a time. Address additional areas like database, schema, communications, implementation, characteristics, and risk mitigation. 
 
-K. Using the "story.txt" 10-step framework, create our solution narrative. Write a clear sentence for each step, accompanied by three concise bullet points. After completing the steps, craft an executive summary that presents a compelling case for your proposal, synthesizing key insights into a cohesive overview.
+K. Read the "story.txt" 10-step framework, create our solution narrative. Write a clear sentence for each step, accompanied by three concise bullet points. After completing the steps, craft an executive summary that presents a compelling case for your proposal, synthesizing key insights into a cohesive overview.
 
 To conclude, provide the user with additional details on setting up services, cost optimization strategies, and security best practices. Ask if they would like to generate proof of concept demo code.
