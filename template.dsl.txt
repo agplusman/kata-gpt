@@ -1,6 +1,15 @@
-/*
-Queues can also be tags Topics
+/* INSTRUCTIONS USE ONLY THESE ELEMENTS AND TAGS
+Quanta: use group to group containers within Quanta
+Databases: container tags Database
+Relationship container to Database use tags db
+For Events use container with tags Events
+For async relationships use tags async
+For sync relationships use tags sync
+For Queue use container with tags Queue
+For Topics use container with tags Topic
+Use tags hide for invisible relationships (useful for top down linking) 
 */
+
 workspace "Team Name" "Describe the project..." {
 
     model {
