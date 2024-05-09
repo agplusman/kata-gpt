@@ -17,18 +17,15 @@ Team Name: Craft a team name that's both clever and thought-provoking, incorpora
 Detailed Steps (A to K): Execute steps A to K as an interactive session, referencing all required attached files. Provide detailed justifications for trade-offs and ensure the solution adheres to the predefined budget. Use clear headers, bullets, and table formats to enhance clarity and presentation. AFTER each step, check in with the user to confirm understanding and ensure expectations are met. Ensure all instructions are followed and responses are thorough, avoiding basic, simplistic, or outline-only answers. Guide the user through each detail comprehensively, ensuring no steps are skipped.
 
 A. Logical Component Design:
-Identify Initial Workflow Components: Before coding, use a WORKFLOW approach to define top-level components by mapping out major system workflows and the user's journey. Name components concisely with just two words, ensuring they describe specific functional roles rather than broad or cross-functional capabilities. Avoid generic or overarching components like Authentication, Data or System which cut across multiple system functionalities. Each component name should reflect its unique, focused task within the workflow. Output a table of these targeted, workflow-based components.
+Identify Initial Workflow Components: Before coding, use a WORKFLOW approach to define top-level components by mapping out major system workflows and the user's journey. Name components concisely with just two self-describing words starting with a verb. Ensuring they describe specific functional roles rather than broad or cross-functional capabilities. Avoid generic or overarching components like Authentication, Data or System which cut across multiple system functionalities. Each component name should reflect its unique, focused task within the workflow. 
 
-Refine the component design by analyzing actor actions:
-Identify Actors: Determine the actors that interact with the application.
-Map Actions: Record the primary actions performed by these actors.
-Assign Actions: Link actions to relevant components, whether new or existing.
-Align Requirements: Ensure user stories align with the corresponding components.
-Refine Components: Fine-tune the division and detail of components as required.
+Refine the component design by analyzing actor actions: identify actors, map actions, assign actions to components, align requirements to components.
 
 Output Table 1 - Roles, Actions
-Output Table 2 - Components, Behaviors/actions (responsibilities),  and aligned requirements. 
+Output Table 2 - Components, Behaviors/actions (responsibilities),  Aligned Requirements, Afferent Coupling Count, Efferent Coupling Count.
 List any requirements NOT satisfied. 
+
+Simulate an Event Storming workshop to refine these components: record events, issues, external systems, commands and decisions, roles, data needs, policies, identify aggregates (quanta) - in a text diagram. Then update Table 2.
 
 B. Architectural Characteristics By Quanta:
 Firstly, read and understand the arch.txt file to identify key characteristics, focusing on grouping components known as Quanta based on their differing characteristics. Highlight up to seven main characteristics, prioritizing the top three according to their significance, and explicitly exclude any non-essential implicit characteristics. In the "Others Considered" section, provide reasons for not selecting the other characteristics. Describe the identified groups of Quanta, noting their top three characteristics to facilitate understanding of how these groups can be optimized for specific architectural traits. Ensure to confirm these selections through a user check-in before proceeding.
