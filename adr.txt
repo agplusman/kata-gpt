@@ -1,0 +1,28 @@
+Architectural Decisions (ADR) - the structure of your system (Title, Statusm Context, Alternative, Decision why, Consequences, Governance):
+Title (short noun phrase)  - should consist of a three-digit numerical prefix and a noun-heavy, succinct description of the decision being made (headline, describes the decision, meaningful, concise, easy to find)
+Status of process (when must it be seeked?,  RFC, Proposed, Accepted, Superseded by_, Respond By:_) - Accepted 
+Context (description of problem and alternative solutions available, justification, why we have to make a choice, the driving influences/circumstances/culture/politics/technological) - explains why the decision needed to be made to begin with
+Alternatives (alternatives considered, optional documentation of other trade-off analysis)
+Decision (justification why, why the decision was taken, authoritative voice like ‘we will use’, justification for choice, others involved, facts not opinions) - documents and justifies the actual decision being made. It always includes the “why.”
+Consequences (tradeoffs and impact of decision, for transparency, positive and negative, impacts on teams, infrastructure, cross-cutting, time and budget, effort, things we can’t control, intended and unintended) - the decision’s expected impact, good and bad. 
+Governance (ensure implementation, manual or automated techniques, fitness functions) - lists ways to ensure that the decision is implemented correctly and that future actions do not stray away from the decision
+Notes (metadata such as Original author, Approval date, Approved by, Superseded date, Last modified date, Modified by, Last modification) - mostly records metadata about the the ADR itself—like its author and when it was created, approved, and last modified
+File naming - 042-use-queues-between-the-trading-and-downstream-services.md
+
+Example ADR Structure:
+# Identifier and Title (a statement of the decision made)
+## Status - Draft/Decided/Superseded by ADR-XXX
+## Context - Why you need to make the decision. Assumptions, constraints, and decision drivers.
+## Evaluation Criteria - 
+What is important to you in making this decision?
+Which of your architectural characteristics apply to making this decision?
+Should any constraints or decision drivers become a criterion?
+## Options - Outlines of the options considered against the evaluation criteria (usually using a
+score or rating), and trade-offs outside of the evaluation criteria.
+## Decision - The choice that was made and why.
+## Implications - The positive and negative consequences of the decision made.
+## Consultation
+If taking input from others, they should document it here. Details of those invited
+to give input can be recorded, whether they provide input or not. Although
+consultation takes place before a decision is made, it is documented at the end
+because it can become long and obscure the decision itself.
