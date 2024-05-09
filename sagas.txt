@@ -1,0 +1,10 @@
+| Saga Type         | Coupling | Complexity | Responsiveness | Scalability | Consistency | Communication | Coordination |
+|-------------------|----------|------------|----------------|-------------|-------------|---------------|--------------|
+| Epic Saga         | Red      | Red        | Red            | Red         | Atomic      | Sync          | Orchestrated |
+| Fantasy Fiction   | Red      | Red        | Red            | Red         | Atomic      | Async         | Orchestrated |
+| Fairy Tale Saga   | Green    | Red        | Green          | Yellow      | Eventual    | Sync          | Orchestrated |
+| Parallel Saga     | Yellow   | Yellow     | Yellow         | Green       | Eventual    | Async         | Orchestrated |
+| Phone Tag Saga    | Red      | Red        | Red            | Red         | Atomic      | Sync          | Choreography |
+| Horror Story Saga | Yellow   | Green      | Yellow         | Green       | Atomic      | Async         | Choreography |
+| Time Travel Saga  | Green    | Red        | Green          | Green       | Eventual    | Sync          | Choreography |
+| Anthology Saga    | Red      | Green      | Red            | Green       | Eventual    | Async         | Choreography |
